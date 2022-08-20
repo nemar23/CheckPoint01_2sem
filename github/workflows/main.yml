@@ -23,7 +23,7 @@ jobs:
 
     - name: Deploy objects to S3 bucket
       run: |
-        aws s3 sync ./ s3://Bucket-Name \
+        aws s3 sync ./ s3://aws-s3-luis-rm94405-checkpoint01 \
         --exclude '.git/*' \
         --exclude '.github/*' \
         --exclude 'README.md' \
